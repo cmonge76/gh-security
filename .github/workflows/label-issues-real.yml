@@ -3,6 +3,8 @@ on:
   issues:
     types:
       - opened
+permissions:
+  issues: write   # <- solo esto; todo lo demás queda sin acceso
 jobs:
   assign-label:
     runs-on: ubuntu-latest
